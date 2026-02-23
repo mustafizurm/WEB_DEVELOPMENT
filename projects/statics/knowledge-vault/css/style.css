@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* common style start*/
+.container {
+    width: 95%;
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+/* common style end*/
+
+/* component design start */
+.get_early_access_btn {
+    background-color: #469165;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* component design end */
+
+/* header start */
+#header {}
+
+
+#header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#header .header-wrapper img {
+    width: 60px;
+    height: 40px;
+}
+
+#header .navigation .menu_list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#header .navigation .menu_list li {
+    list-style-type: none;
+}
+
+#header .navigation .menu_list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* header end */
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* common style start*/
+    .container {
+        max-width: 868px;
+    }
+
+    /* common style end*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* common style start*/
+    .container {
+        max-width: 1092px;
+    }
+
+    /* common style end*/
+    /* header start */
+    #header {}
+
+
+
+    #header .header-wrapper img {
+        width: 130px;
+        height: 50px;
+    }
+
+
+    #header .navigation .menu_list li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    /* header end */
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* common style start*/
+    .container {
+        max-width: 1300px;
+    }
+
+    /* common style end*/
+}
