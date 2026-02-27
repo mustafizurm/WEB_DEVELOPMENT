@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* common css code start */
+    .container {
+        width: 95%;
+        margin: 0px auto;
+        max-width: 340px;
+    }
+
+    /* common css code end */
+
+    #main-content {}
+
+    /* testimonial section start */
+    #testimonials {
+        margin-top: 20px;
+    }
+
+    #testimonials .testimonials__header {}
+
+    #testimonials .testimonials__header .testimonials__subtitle {
+        text-align: center;
+        margin-bottom: 10px;
+        color: darkcyan;
+    }
+
+    #testimonials .testimonials__header .testimonials__title {
+        text-align: center;
+    }
+
+    #testimonials .testimonials__wrapper {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card {
+        width: 100%;
+        border: 3px solid gray;
+        padding: 26px;
+        text-align: center;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: darkcyan;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card:hover::before {
+        width: 400%;
+    }
+
+
+    #testimonials .testimonials__wrapper .testimonial-card .testimonial-card__text {
+        padding-top: 80px;
+        font-size: 22px;
+        color: darkcyan;
+        transition: .6s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card:hover .testimonial-card__text {
+        color: white;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card .testimonial-card__description {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 12px;
+        line-height: 23px;
+        transition: .4s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card:hover .testimonial-card__description {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card .testimonial-card__author {
+        margin-top: 16px;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card .testimonial-card__author img {
+        width: 80px;
+        height: 100%;
+        border-radius: 50%;
+        margin-top: 10px;
+        border: 3px solid darkcyan;
+        transition: .6s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card:hover .testimonial-card__author img{
+        border: 3px solid white;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card .testimonial-card__author .testimonial-card__author__details .testimonial-card__name {
+        margin-top: 14px;
+        margin-bottom: 5px;
+        color: darkcyan;
+        transition: .6s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card:hover .testimonial-card__author .testimonial-card__name {
+        color: white;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card .testimonial-card__author .testimonial-card__author__details .testimonial-card__role {
+        color: rgba(0, 0, 0, 0.6);
+        transition: .5s;
+    }
+
+    #testimonials .testimonials__wrapper .testimonial-card:hover .testimonial-card__author__details .testimonial-card__role{
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+
+
+
+    /* testimonial section end */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* common css code start */
+    .container {
+        max-width: 700px;
+    }
+
+    /* common css code end */
+
+    /* testimonial section start */
+    #testimonials .testimonials__wrapper .testimonial-card {
+        width: calc(50% - 20px);
+    }
+
+    /* testimonial section end */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* common css code start */
+    .container {
+        max-width: 1020px;
+    }
+
+    /* testimonial section start */
+    #testimonials .testimonials__wrapper .testimonial-card {
+        width: calc(33% - 20px);
+    }
+
+    /* testimonial section end */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
