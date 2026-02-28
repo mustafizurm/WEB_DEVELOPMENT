@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* common style start */
+    .container {
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    /* common style end */
+
+    /* pricing-table-section start */
+    #pricing-table-section {
+        margin-top: 30px;
+    }
+
+    #pricing-table-section .pricing-table__title {
+        text-align: center;
+        font-size: 28px;
+        padding: 15px 0px;
+        font-weight: 800;
+    }
+
+    #pricing-table-section .pricing-table-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.809);
+        padding: 28px 32px;
+        /* height: 400px; */
+    }
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card .price-table__header {
+        text-align: center;
+    }
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card .price-table__header h2 {
+        color: rgba(255, 255, 255, 0.58);
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card .price-table__header h1 {
+        color: white;
+        margin-top: 6px;
+    }
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card .price-table__details{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.28);
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+       #pricing-table-section .pricing-table-wrapper .price-table__card .price-table__details li{
+        list-style: circle;
+       }
+
+
+        #pricing-table-section .pricing-table-wrapper .price-table__card .choose_plan_btn{
+            padding: 6px 20px;
+            margin: 0px auto;
+            display: block;
+            margin-top: 30px;
+            background-color: transparent;
+            border: 1px solid red;
+            border-radius: 2px;
+            color: white;
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+    /* pricing-table-section end */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* common style start */
+    .container {
+        width: 600px;
+    }
+
+    /* common style end */
+    /* pricing-table-section start */
+
+    #pricing-table-section .pricing-table-wrapper {
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card {
+        width: calc(50% - 10px);
+    }
+
+    /* pricing-table-section end */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* common style start */
+    .container {
+        width: 900px;
+    }
+
+    /* common style end */
+    /* pricing-table-section start */
+
+    #pricing-table-section .pricing-table-wrapper .price-table__card {
+        width: calc(33% - 5px);
+    }
+
+    /* pricing-table-section end */
+}
