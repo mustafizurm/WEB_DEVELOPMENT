@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common style */
+.container {
+    width: 240px;
+    margin: 0px auto;
+}
+
+/* pricing-table section start */
+#pricing-table {
+    margin-top: 40px;
+}
+
+#pricing-table .pricing-table-header .pricing-table-subtitle{
+    text-align: center;
+    font-size: 12px;
+}
+#pricing-table .pricing-table-header .pricing-table-title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 26px;
+}
+
+#pricing-table .pricing-table-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#pricing-table .pricing-table-layout .p__table__cart {
+    width: 100%;
+    padding: 46px 30px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__header__block{
+
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__header__description{
+    font-size: 13px;
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__price{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__price span{
+    font-size: 15px;
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__features{
+
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__features .p__table__cart__features__title{
+    font-size: 15px;
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__features .p__table__cart__features__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__features .p__table__cart__features__list li{
+    font-size: 12px;
+}
+#pricing-table .pricing-table-layout .p__table__cart .p__table__cart__btn{
+    margin: 0px auto;
+    margin-top: 20px;
+    display: block;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color:aquamarine;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#pricing-table .pricing-table-layout .p__table__cart__active{
+    background-color: aquamarine;
+    color: white;
+}
+
+#pricing-table .pricing-table-layout .p__table__cart__active .p__table__cart__btn{
+    background-color: white;
+    color: black;
+}
+
+
+/* pricing-table section end */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* common style */
+    .container {
+        width: 520px;
+    }
+
+    /* pricing-table section start */
+    #pricing-table .pricing-table-layout {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #pricing-table .pricing-table-layout .p__table__cart {
+        width: calc(50% - 20px);
+    }
+
+
+    /* pricing-table section end */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* common style */
+    .container {
+        width: 790px;
+    }
+
+    /* pricing-table section start */
+    #pricing-table .pricing-table-layout {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #pricing-table .pricing-table-layout .p__table__cart {
+        width: calc(33% - 20px);
+    }
+
+
+    /* pricing-table section end */
+}
