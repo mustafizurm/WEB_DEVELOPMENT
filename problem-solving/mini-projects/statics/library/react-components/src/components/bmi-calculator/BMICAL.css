@@ -1,0 +1,64 @@
+/* common style start */
+.container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 200px 0px;
+}
+
+/* common style end */
+
+#BMI-CALCULATOR {}
+
+#BMI-CALCULATOR form {
+    padding: 34px 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    ;
+}
+
+
+
+#BMI-CALCULATOR form .calculator__title {
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 12px;
+}
+
+#BMI-CALCULATOR form .form__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#BMI-CALCULATOR form .form__group{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+#BMI-CALCULATOR form input{
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+#BMI-CALCULATOR form .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+#BMI-CALCULATOR form .buttons button{
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+#BMI-CALCULATOR form .buttons button:first-child{
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#BMI-CALCULATOR form footer{
+    text-align: center;
+}
